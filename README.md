@@ -48,11 +48,17 @@ npx hardhat verify --network kovan 0x80c4027c86dad5b19470713496b7779e729eaa9c
 
 ## Result
 
-Proxy
+Proxy - Kovan
 0xDa9024D6dbB4EE71d475189fB80DF3f2B69417A2
 
-Old Implementation
+Old Implementation - Kovan
 0x31a0d5e26b3d7ba82e28a6c3db61973c3b6823c7
 
-New Implementation
+New Implementation - Kovan
 0x80c4027c86dad5b19470713496b7779e729eaa9c
+
+Proxy - Rinkeby
+0xA9939b4a0795Eb4fCbD42F22F0b860295C1fedDb
+
+Implementation - Rinkeby
+0x1f30bfc12589ac25e470ac8c31235d62690f94f8

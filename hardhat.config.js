@@ -22,6 +22,10 @@ module.exports = {
     kovan: {
       url: `https://kovan.infura.io/v3/${infuraKey}`,
       accounts: {mnemonic: mnemonic}
+    },
+    rinkeby: {
+      url: `https://rinkeby.infura.io/v3/${infuraKey}`,
+      accounts: {mnemonic: mnemonic}
     }
   },
   etherscan: {
