@@ -5,12 +5,22 @@
       "address": "0xd8487BF863e56266Df5886A66194c7d02BeC40A6",
       "txHash": "0x025d5b44301d44f98134d59ba81e5b0a7d11993791ecdb658d53296940f21a6c",
       "kind": "uups"
+    },
+    {
+      "address": "0x8494d1C4cf6D48ee8a7e27Cc9414bEAbc634Dd69",
+      "txHash": "0xfb65706b07abf19cf5c67e15aa2e8662a7c66ee0835a6a197cec16cfd7031bf3",
+      "kind": "uups"
+    },
+    {
+      "address": "0x155D3d3A820a8692dB4Ffa001A753960c22fC5aa",
+      "txHash": "0x4efa21e0f3d9cf22476b297d282cb72918a02c829f47e7993ef7ad1934bf3c21",
+      "kind": "uups"
     }
   ],
   "impls": {
     "d9e52d3289e56dc4cfd057980a0ae6b1049327b7c3e88f72fb7cf74095753b0e": {
-      "address": "0x38817A984dc3944Ff75aB22b9943d8fabC3a2956",
-      "txHash": "0x9f8fcee653c22b701955402c36519024d63cbef72e377dbad9dd3fbefe0d4678",
+      "address": "0xb5FF5601Bad6e20f2B50718E1A691D0873ab27BE",
+      "txHash": "0x84b373cbca1097ced296d18934c354ca873ea985e398687a02c94a3feb590b45",
       "layout": {
         "storage": [
           {
