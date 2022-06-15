@@ -59,3 +59,20 @@ const Contract = await ethers.getContractFactory('AgusToken');
 const contract = await Contract.attach('0x155D3d3A820a8692dB4Ffa001A753960c22fC5aa');
 await contract.transfer('0x4F641BD023Fe8fFD9368b3ff3BC9092f0F40F642', ethers.utils.parseUnits("2", "ether"))
 ```
+
+### Query GraphQL
+```
+http://localhost:8000/subgraphs/name/agustincharry/agus-token-graph/graphql
+```
+
+**Example:**
+```
+{
+  transferEntities {
+    id
+    value
+    from
+    to
+  }
+}
+```
