@@ -1,0 +1,9 @@
+type TransferEntity @entity {
+  id: ID!
+  from: Bytes! # address
+  to: Bytes! # address
+  value: BigInt!
+  blockSize: BigInt
+  gasPrice: BigInt!
+  timestamp: BigInt!
+}

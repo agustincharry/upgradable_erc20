@@ -1,0 +1,41 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: AgusToken
+    network: mainnet
+    source:
+      address: "0x155D3d3A820a8692dB4Ffa001A753960c22fC5aa"
+      abi: AgusToken
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - AdminChanged
+        - Approval
+        - BeaconUpgraded
+        - Initialized
+        - OwnershipTransferred
+        - Transfer
+        - Upgraded
+      abis:
+        - name: AgusToken
+          file: ./abis/AgusToken.json
+      eventHandlers:
+        - event: AdminChanged(address,address)
+          handler: handleAdminChanged
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: BeaconUpgraded(indexed address)
+          handler: handleBeaconUpgraded
+        - event: Initialized(uint8)
+          handler: handleInitialized
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: Upgraded(indexed address)
+          handler: handleUpgraded
+      file: ./src/agus-token.ts
