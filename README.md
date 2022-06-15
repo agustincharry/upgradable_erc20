@@ -15,6 +15,11 @@ In the root folder of the project create a file ".infura_secret" with the Infura
 npm install
 ```
 
+## Generate ABI (optional)
+```shell
+npx hardhat export-abi
+```
+
 ## Deploy
 ```shell
 npx hardhat clean

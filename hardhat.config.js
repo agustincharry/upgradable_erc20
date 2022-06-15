@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
 require("@openzeppelin/hardhat-upgrades");
 require("@nomiclabs/hardhat-etherscan");
+require('hardhat-abi-exporter');
 
 task("accounts", "Prints the list of accounts", async () => {
   const accounts = await ethers.getSigners();
